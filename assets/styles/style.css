@@ -19,7 +19,7 @@ header{
 /* NAVBAR */
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height: 100px;
     font-family: Mitr-Regular;
@@ -50,6 +50,9 @@ nav ul li a{
 }
 .buy-ticket a{
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: color 0.5s;
 }
 .buy-ticket:hover,
@@ -81,7 +84,7 @@ nav ul li a{
     text-align: end;
     font-family: Roboto-Regular;
     font-size: 55px;
-    color: #ff004d;
+    color: #000;
     text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 .header-text h1{
@@ -90,6 +93,10 @@ nav ul li a{
     font-weight: normal;
     color: #000;
     text-shadow: 2px 4px 3px  rgba(0,0,0,0.3);
+}
+.header-text p ion-icon{
+    color: #ff004d;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 @font-face{
     font-family: Mitr-Regular;
