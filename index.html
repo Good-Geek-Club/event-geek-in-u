@@ -1,43 +1,493 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles/style.css">
-    <title>Geek in u</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Create a stylish landing page for your business startup and get leads for the offered services with this HTML landing page template.">
+    <meta name="author" content="Inovatik">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>Good Geek Club</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/index.css">
+
+	<!-- Favicon  -->
+    <link rel="icon" href="images/goodgeek.png">
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li class="about">
-                    <a href="#">About</a>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+    
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Evolo</a> -->
+
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="index.html"><img src="images/logo4.svg" alt="alternative"></a>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#header">Home<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="location">
-                    <a href="#">Location</a>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#services">Location</a>
                 </li>
-                <li class="speakers">
-                    <a href="#">Speakers</a>
+           
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#request">Speakers</a>
                 </li>
-                <li class="sponsors">
-                    <a href="#">Sponsors</a>
-                </li>
-                <li class="buy-ticket">
-                    <a href="#">Buy&nbsp;ticket</a>
+
+                
+
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#contact">Buy ticket</a>
                 </li>
             </ul>
-        </nav>
-        <div class="header-text">
-            <h1>GEEK&nbsp;&nbsp;&nbsp;IN&nbsp;&nbsp;&nbsp;U</h1>
-            <p><ion-icon name="location"></ion-icon>Bangkok</p>
-            <p><ion-icon name="calendar-clear"></ion-icon>2020,&nbsp;11&nbsp;DEC</p>
         </div>
-    </header>
-    <section class="">
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
 
-    </section>
-    <section></section>
-    <section></section>
-    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <h1 class="header-text"><span class="turquoise">Geek </span>In U</h1>
+                            <p class="p-large"></p>
+                            <a class="btn-solid-lg page-scroll" href="https://www.eventpop.me/">Get ticket</a>
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6">
+                        <div class="image-container">
+                            <img class="img-fluid" src="images/header-teamwork.svg" alt="alternative">
+                        </div> <!-- end of image-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+
+    <!-- Customers -->
+    <div class="slider-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h5>Sponsored By</h5>
+                    
+                    <!-- Image Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container image-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img class="img-responsive" src="images/customer-logo-5.png" alt="alternative">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img class="img-responsive" src="images/customer-logo-5.png" alt="alternative">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img class="img-responsive" src="images/customer-logo-5.png" alt="alternative">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img class="img-responsive" src="images/customer-logo-5.png" alt="alternative">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img class="img-responsive" src="images/customer-logo-5.png" alt="alternative">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img class="img-responsive" src="images/customer-logo-5.png" alt="alternative">
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-wrapper -->
+                        </div> <!-- end of swiper container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of image slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider-1 -->
+    <!-- end of customers -->
+
+
+    <!-- Services -->
+    <div id="services" class="cards-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>ข้อมูลเบื้องต้นของค่ายนี้</h2>
+                    <p class="p-heading p-large"></p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                   
+                    <!-- Card -->
+                    <div class="card">
+                        <img class="card-image" src="images/services-icon-1.svg" alt="alternative">
+                        <div class="card-body">
+                            <h4 class="card-title">ระดับการศึกษา</h4>
+                            <p class="card-text-title">นักเรียนชั้นมัธยมศึกษาปีที่6 หรือนักเรียนปวช.3 ที่มีสนใจเทคโนโลยีสารสนเทศและอยากจะเข้าศึกษาต่อในสายงานด้านเทคโนโลยีสารสนเทศ</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+                      <!-- Card -->
+                      <div class="card">
+                        <img class="card-image" src="images/services-icon-3.svg" alt="alternative">
+                        <div class="card-body">
+                            <h4 class="card-title">มีประกาศนียบัตรให้หรือไม่?</h4>
+                            <p class="card-text-title">มีประกาศนียบัตรให้กับผู้เข้าร่วมกิจกรรม</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+                    <div class="card">
+                        <img class="card-image" src="images/services-icon-3.svg" alt="alternative">
+                        <div class="card-body">
+                            <h4 class="card-title">ค่าใช้จ่ายในการเข้าร่วมกิจกรรม?</h4>
+                            <p class="card-text-title">มีค่าลงทะเบียน 690 บาท</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+
+                    <!-- Card -->
+                    <div class="card">
+                        <img class="card-image" src="images/services-icon-3.svg" alt="alternative">
+                        <div class="card-body">
+                            <h4 class="card-title">จำนวนที่รับ</h4>
+                            <p class="card-text-title">ออฟไลน์ จำนวน 50-70 คน</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+                    
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-1 -->
+    <!-- end of services -->
+<!-- Services -->
+<div id="services" class="cards-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>กำหนดการ</h2>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="container mt-5 mb-5">
+                    <div class="row">
+                        <div class="col-md-6 offset-md-3">
+                            <ul class="timeline">
+                                <li>
+                                    <a>รับสมัคร</a>
+                                    <a class="float-right">20 November, 2020</a>
+                                    <br><br/>
+                                    <br><br/>
+                                    <p></p>
+                                </li>
+                                <li>
+                                    <a>ประกาศรายชื่อผู้มีสิทธิ์เข้าร่วมกิจกรรม</a>
+                                    <a class="float-right">6 December, 2020</a>
+                                    <br><br/>
+                                    <br><br/>
+                                    <p></p>
+                                 </li>
+                                <li>
+                                    <a>ยืนยันสิทธิ์การเข้าร่วมกิจกรรม</a>
+                                    <a class="float-right">7 December, 2020</a>
+                                    <br><br/>
+                                    <br><br/>
+                                    <p></p>
+                                 </li>
+                                 <li>
+                                    <a>วันกิจกรรม</a>
+                                    <a class="float-right">11 December, 2020</a>
+                                    <br><br/>
+                                    <br><br/>
+                                    <p></p>
+                                 </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Details 1 -->
+    <div class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>WHAT IS Geek In U?</h2>
+                        <p class="card-text-title">ในปัจจุบันเทคโนโลยีมีบทบาทต่อชีวิตเป็นอย่างมาก เช่นเดียวกันอาชีพด้านเทคโนโลยีก็เป็นที่นิยมมากขึ้น จึงทำให้ปัจจุบันมีนักเรียนที่ต้องการ เข้าศึกษาต่อในสาขาที่เกี่ยวข้องกับเทคโนโลยีเพิ่มมากขึ้น แต่ด้วยความที่สายงานทางเทคโนโลยีนั้นมีหลากหลายสาขา จนทำให้บางครั้งน้องๆ นักเรียนที่อยากศึกษาต่อด้านนี้ สับสนไม่แน่ใจว่าควรเลือกเรียนเรียนสาขาไหนที่ตรงกับความถนัด และความต้องการของตัวเอง จีงเกิดเป็นคำถามมากมายบนโลกโซเชียล เกี่ยวกับการเตรียมตัว การเลิอกสาขา รวมถึงควรเลือกมหาวิทยาลัยไหน ที่จะทำให้สามารถต่อยอดการทำงานในสายอาชีพนี้ได้ โครงการนี้จึงเกิดขึ้นเพื่อให้คำแนะนำ ให้แนวทาง การเตรียมตัว ความเชื่อมั่นที่จะตัดสินใจเลือกสาขาวิชา และมหาวิทยาลัยที่จะเข้าศึกษาต่อในงานด้านเทคโนโลยี</p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/details-1-office-worker.svg" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of details 1 -->
+
+    
+    <!-- Details 2 -->
+    <div class="basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/details-2-office-team-work.svg" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>วัตถุประสงค์</h2>
+                        <ul class="card-text-title list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-check"></i>
+                                <div class="media-body">เพื่อให้ผู้เข้าอบรมมีแนวทางในการเลือกและตัดสินใจเข้าศึกษาต่อในสาขาด้านเทคโนโลยีที่คนเองสนใจ</div>
+                                
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-check"></i>
+                                <div class="media-body">เพื่อให้ผู้เข้าอบรมมีแรงบันดาลใจและมุ่งมั่นในการเข้าศึกษาต่อในสาขาวิชาด้านเทคโนโลยี</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-check"></i>
+                                <div class="media-body">เพื่อให้ผู้เข้าอบรม ได้เรียนรู้ ทำความเข้าใจเทคโนโลยีที่ตนสนใจเบื้องต้น และได้ลงมือปฎิบัติจริงจาก Workshop</div>
+                            </li>
+                        </ul>
+                       
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+    <!-- end of details 2 -->
+
+    <!-- Details Lightboxes -->
+    <!-- Details Lightbox 1 -->
+	
+    <!-- end of details lightbox 2 -->
+    <!-- end of details lightboxes -->
+
+
+    <!-- Pricing -->
+    <div id="pricing" class="cards-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>รูปแบบกิจกรรม</h2>
+                    <p class="p-heading p-large">แนะแนวทางการตัดสินใจเลือกสาขาวิชาทางเทคโนโลยีและ Workshop ทดลองใช้เทคโนโลยีที่กำลังเป็นที่นิยม ณ ปัจจุบัน</p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            
+                  
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-2 -->
+    <!-- end of pricing -->
+
+
+    <!-- Request -->
+    
+
+
+    <!-- end of request -->
+
+
+    <!-- Video -->
+    <div class="basic-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>ตัวอย่างผลงานที่ผ่านมา</h2>
+                </div> <!-- end of col -->
+            </div> 
+            
+                <div class="col-lg-12">
+                    <div class="image-container">
+                        <img class="rounded mx-auto d-block" src="images/11.png" alt="alternative" >
+                        
+                        
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div>
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-heading p-large">ค่าย<strong> Hack Myself#1 </strong>: ค่ายออนไลน์ที่ช่วนค้นหาตัวเองว่าถนัดและเหมาะสมกับงานเทคโนโลยีสารสนเทศในด้านไหน ผ่านกิจกรรม Workshop และกิจกรรมอื่นๆ ในค่าย</p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-3 -->
+    <!-- end of video -->
+
+    <!-- Contact -->
+    <div id="contact" class="form-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>สถานที่จัดงาน</h2>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="address"></li>
+                        <li><i class="fas fa-map-marker-alt"></i>KX - Knowledge Exchange for Innovation (KMUTT)</li>
+                        <li><i class="fas fa-phone"></i><a class="turquoise" href="tel:0999999999">+99 999 9999</a></li>
+                        <li><i class="fas fa-envelope"></i><a class="turquoise" href="mailto:Goodgeekclub@gmail.com">Goodgeekclub@gmail.com</a></li>
+                    </ul>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="map-responsive">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26073.949957770215!2d100.50375911446497!3d13.723544275038584!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe2511ae461733d57!2sKX%20-%20Knowledge%20Exchange%20for%20Innovation%20(KMUTT)!5e0!3m2!1sth!2sth!4v1605627365723!5m2!1sth!2sth" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    
+                    <div class="col-lg-10">
+                        <div class="image-container">
+                            <img class="img-fluid" src="images/KM.png" alt="alternative">
+                            <br /> <br />
+                            <img class="img-fluid" src="images/KM2.png" alt="alternative">
+                        </div> <!-- end of image-container -->
+                    </div> <!-- end of col -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form-2 -->
+    <!-- end of contact -->
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-col">
+                        <h4>ทีมจัดงาน
+                        </h4>
+                        <p>ชมรม GoodGeekClub ชมรมที่มุ่งเน้นพัฒนาเยาวชนไอทีเพื่อสร้างสรรค์สิ่งดีๆให้สังคม</p>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col middle">
+                        <h4>หากมีข้อสงสัยเพิ่มเติม สามารถติดต่อได้ที่</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">พี่เน 099-999-9999 <a class="turquoise"                               </a></div>
+  </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">พี่ปอ099-999-9999 <a class="turquoise" </a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col last">
+                        <h4>Social Media</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Facebook <a class="turquoise" href="https://www.facebook.com/good.geek.community/">Good Geek</a></div>
+  </li>
+                         <li class="media">
+                                <i class="fas fa-square"></i>
+                                 <div class="media-body">instagram <a class="turquoise" href="https://www.instagram.com/goodgeek.club/">goodgeek.club</a></div>
+</li>
+                            
+                    </div> 
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2020 <a href="#">GoodGeekClub</a> - All rights reserved</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+    	
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
 </body>
 </html>

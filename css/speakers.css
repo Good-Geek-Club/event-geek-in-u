@@ -1,0 +1,15 @@
+body{
+    height: 100vh;
+}
+section{
+    height: 100%;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+.slider-2{
+    height: 100%;
+}
