@@ -1,0 +1,44 @@
+/* Min-width width 768px */
+@media (min-width: 768px) {
+
+    /* Header */
+    .header .header-content {
+        padding-top: 10.5rem;
+    }
+
+    .header h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+    /* end of header */
+}
+/* end of min-width width 768px */
+
+
+@media (min-width: 992px) {
+    /* Header */
+    .header {
+        background: url('~src/assets/images/header-background.jpg') center center no-repeat;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    /* Header */
+    .header .header-content {
+        padding-top: 12.5rem;
+    }
+
+    .header .text-container {
+        margin-top: 5.375rem;
+        margin-left: 1rem;
+        margin-right: 2rem;
+    }
+
+    .header .image-container {
+        margin-left: 2rem;
+        margin-right: 1rem;
+    }
+    /* end of header */
+}

@@ -1,0 +1,133 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+.speaker-contents{
+    margin: 10px 20%;
+    font-size: 18px;
+}
+/* SPEAKER ARTICLE */
+.speaker-contents article{
+    width: 100%;
+    border: 1px solid #949494;
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    margin-bottom: 30px;
+    background-color: #fff;
+}
+/* speaker profile */
+.speaker-profile img{
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #f04651;
+    width: 75%;
+    margin: 40px 0 0 30px;
+}
+/* speaker about */
+.speaker-about{
+    margin: 10px 15px 15px 0;
+    font-family: sans-serif;
+}
+.speaker-about h1{
+    font-size: 22px;
+    padding: 10px 0 20px 0;
+}
+.speaker-about h2{
+    font-size: 60%;
+    color: #949494;
+    padding-top: 10px;
+}
+.speaker-about p{
+    text-align: justify;
+}
+
+@media only screen and (max-width: 841px) {
+    .speaker-profile img{
+        width: 45%;
+    }
+    .speaker-contents article{
+        display: block;
+    }
+
+    .speaker-profile{
+        text-align: center;
+    }
+    .speaker-profile img{
+        margin: 10px 0 0 0;
+    }
+
+    .speaker-about{
+        margin: 0;
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 732px) {
+    .speaker-contents article{
+        display: block;
+    }
+
+    .speaker-profile{
+        text-align: center;
+    }
+    .speaker-profile img{
+        margin: 10px 0 0 0;
+    }
+
+    .speaker-about{
+        margin: 0;
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 641px) {
+    .speaker-contents article{
+        display: block;
+    }
+
+    .speaker-profile{
+        text-align: center;
+    }
+    .speaker-profile img{
+        margin: 10px 0 0 0;
+    }
+
+    .speaker-about{
+        margin: 0;
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 481px) {
+    .speaker-contents article{
+        display: block;
+    }
+
+    .speaker-profile{
+        text-align: center;
+    }
+    .speaker-profile img{
+        margin: 10px 0 0 0;
+    }
+
+    .speaker-about{
+        margin: 0;
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .speaker-contents article{
+        display: block;
+    }
+
+    .speaker-profile{
+        text-align: center;
+    }
+    .speaker-profile img{
+        margin: 10px 0 0 0;
+    }
+
+    .speaker-about{
+        margin: 0;
+        padding: 10px;
+    }
+}

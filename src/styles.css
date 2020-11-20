@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&display=swap');
+
+
+body, p {
+    color: #626262;
+    font: 400 0.875rem/1.375rem "Raleway", sans-serif;
+}
+
+.p-large {
+    font: 400 1rem/1.5rem "Raleway", sans-serif;
+}
+
+.p-small {
+    font: 400 0.75rem/1.25rem "Raleway", sans-serif;
+}
