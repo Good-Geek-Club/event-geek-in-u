@@ -27,7 +27,7 @@ import {CommonModule} from '@angular/common';
     DescriptionComponent,
     FooterComponent,
     LocationComponent,
-    SponsorsComponent
+    SponsorsComponent,
   ],
   imports: [
     CommonModule,

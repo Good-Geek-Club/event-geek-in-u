@@ -28,7 +28,42 @@ export class SpeakersComponent implements OnInit {
       position: 'ผู้เคลื่อนไหวทางการเมือง',
       topic: 'การส่งหนังสือร่างแก้รัฐธรรมนูญฉบับคณะราษฎร',
       synopsis: 'In this talk, we show you how to satisfy your compliance department using AWS Config rules. We walk you through enabling Config in a multi-account environment, mapping your compliance requirements to AWS-managed Config rules to demonstrate continuous compliance, and building and deploying your own AWS Config rules. Learn the basics of AWS Config, Config rules, and the central aggregation of AWS Config information in a single pane of glass.'
-    }
+    },
+    {
+      imgUrl: 'https://media.amazonwebservices.com/blog/2017/jeffbarr_purple_2017_400x400.jpg',
+      name: 'Somsak Jeamteerasakul',
+      position: 'ผู้เคลื่อนไหวทางการเมือง',
+      topic: 'การส่งหนังสือร่างแก้รัฐธรรมนูญฉบับคณะราษฎร',
+      synopsis: 'In this talk, we show you how to satisfy your compliance department using AWS Config rules. We walk you through enabling Config in a multi-account environment, mapping your compliance requirements to AWS-managed Config rules to demonstrate continuous compliance, and building and deploying your own AWS Config rules. Learn the basics of AWS Config, Config rules, and the central aggregation of AWS Config information in a single pane of glass.'
+    },
+    {
+      imgUrl: 'https://media.amazonwebservices.com/blog/2017/jeffbarr_purple_2017_400x400.jpg',
+      name: 'Somsak Jeamteerasakul',
+      position: 'ผู้เคลื่อนไหวทางการเมือง',
+      topic: 'การส่งหนังสือร่างแก้รัฐธรรมนูญฉบับคณะราษฎร',
+      synopsis: 'In this talk, we show you how to satisfy your compliance department using AWS Config rules. We walk you through enabling Config in a multi-account environment, mapping your compliance requirements to AWS-managed Config rules to demonstrate continuous compliance, and building and deploying your own AWS Config rules. Learn the basics of AWS Config, Config rules, and the central aggregation of AWS Config information in a single pane of glass.'
+    },
+    {
+      imgUrl: 'https://media.amazonwebservices.com/blog/2017/jeffbarr_purple_2017_400x400.jpg',
+      name: 'Pavin Chachavalpongpun',
+      position: 'ผู้เคลื่อนไหวทางการเมือง',
+      topic: 'การส่งหนังสือร่างแก้รัฐธรรมนูญฉบับคณะราษฎร',
+      synopsis: 'สวัสดีค่ะ ปวินค่ะ'
+    },
+    {
+      imgUrl: 'https://media.amazonwebservices.com/blog/2017/jeffbarr_purple_2017_400x400.jpg',
+      name: 'Somsak Jeamteerasakul',
+      position: 'ผู้เคลื่อนไหวทางการเมือง',
+      topic: 'การส่งหนังสือร่างแก้รัฐธรรมนูญฉบับคณะราษฎร',
+      synopsis: 'In this talk, we show you how to satisfy your compliance department using AWS Config rules. We walk you through enabling Config in a multi-account environment, mapping your compliance requirements to AWS-managed Config rules to demonstrate continuous compliance, and building and deploying your own AWS Config rules. Learn the basics of AWS Config, Config rules, and the central aggregation of AWS Config information in a single pane of glass.'
+    },
+    {
+      imgUrl: 'https://media.amazonwebservices.com/blog/2017/jeffbarr_purple_2017_400x400.jpg',
+      name: 'Pavin Chachavalpongpun',
+      position: 'ผู้เคลื่อนไหวทางการเมือง',
+      topic: 'การส่งหนังสือร่างแก้รัฐธรรมนูญฉบับคณะราษฎร',
+      synopsis: 'สวัสดีค่ะ ปวินค่ะ'
+    },
   ];
   constructor() { }
 
