@@ -10,7 +10,7 @@
     "e2e": "ng e2e",
     "dev:ssr": "ng run geek-in-u:serve-ssr",
     "serve:ssr": "node dist/geek-in-u/server/main.js",
-    "build:ssr": "ng build --prod && ng run geek-in-u:server:production",
+    "build:ssr": "ng build --prod --aot --optimization && ng run geek-in-u:server:production",
     "prerender": "ng run geek-in-u:prerender"
   },
   "private": true,
