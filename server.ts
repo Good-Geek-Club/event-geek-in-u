@@ -31,7 +31,15 @@ export function app(): express.Express {
 
   // All regular routes use the Universal engine
   server.get('*', (req, res) => {
-    res.render(indexHtml, { req, providers: [{ provide: APP_BASE_HREF, useValue: req.baseUrl }] });
+    // res.render(indexHtml, { req, providers: [{ provide: APP_BASE_HREF, useValue: req.baseUrl }] });
+    const fullPath = join(distFolder, req.originalUrl);
+    if (existsSync(fullPath)) {
+      console.log('STATIC Exists');
+      return res.sendFile(join(distFolder, req.originalUrl));
+    } else {
+      // Dynamic
+      res.render(indexHtml, { req, providers: [{ provide: APP_BASE_HREF, useValue: req.baseUrl }] });
+    }
   });
 
   return server;
