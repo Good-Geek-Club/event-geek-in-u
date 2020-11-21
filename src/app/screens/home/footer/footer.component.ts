@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit {
 
   contacts = [
-    { name: 'พี่เน', tel: '083-545-8540' },
-    { name: 'พี่ปอ', tel: '083-545-8540' },
+    { name: 'พี่แมน', tel: '082-345-2819' },
+    { name: 'พี่ปอ', tel: '090-548-2666' },
   ];
   socials = [
     {

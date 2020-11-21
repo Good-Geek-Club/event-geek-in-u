@@ -11,7 +11,7 @@
 /* SPEAKER ARTICLE */
 .speaker-contents article{
     width: 100%;
-    border: 1px solid #949494;
+    border: 1px solid salmon;
     display: grid;
     grid-template-columns: 4fr 8fr;
     margin-bottom: 30px;
@@ -21,7 +21,7 @@
 .speaker-profile img{
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #f04651;
+    border: 4px solid salmon;
     width: 75%;
     margin: 40px 0 0 30px;
 }

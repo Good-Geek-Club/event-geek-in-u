@@ -12,7 +12,7 @@
                 <div class="footer-col middle">
                     <h5>ติดต่อข้อมูลเพิ่มเติมได้ที่</h5>
                     <p *ngFor="let element of contacts;">
-                        <i class="fas fa-square fa-xs mr-2"></i><span class="media-body">{{element.name}} : <a class="turquoise">{{element.tel}}</a></span>
+                        <i class="fas fa-square fa-xs mr-2"></i><span class="media-body">{{element.name}} : <a class="turquoise" style="color: cornflowerblue">{{element.tel}}</a></span>
                     </p>
                 </div>
             </div> <!-- end of col -->
@@ -21,7 +21,7 @@
                     <h4>Social Media</h4>
                     <p *ngFor="let element of socials;">
                         <i [ngClass]="element.iconClass">
-                            <span><a class="turquoise" [href]="element.href">{{element.title}}</a></span>
+                            &nbsp;<span class="mr-2"><a class="turquoise" style="color: cornflowerblue" [href]="element.href">{{element.title}}</a></span>
                         </i>
                     </p>
                 </div>
