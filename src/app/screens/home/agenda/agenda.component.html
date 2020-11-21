@@ -1,53 +1,39 @@
-<!-- Services -->
-<div id="services" class="cards-1">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="text-center">กำหนดการ</h2>
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="container mt-5 mb-5">
-                    <div class="row">
-                        <div class="col-md-6 offset-md-3">
-                            <ul class="timeline">
-                                <li *ngFor="let element of agenda;">
-                                    <a>{{element.title}}</a>
-                                    <a class="float-right">{{element.time}}</a>
-                                    <p *ngIf="element.detail">{{element.detail}}</p>
-                                </li>
-                                <li>
-                                    <a>รับสมัคร</a>
-                                    <a class="float-right">20 November, 2020</a>
-                                    <br><br/>
-                                    <br><br/>
-                                    <p></p>
-                                </li>
-                                <li>
-                                    <a>ประกาศรายชื่อผู้มีสิทธิ์เข้าร่วมกิจกรรม</a>
-                                    <a class="float-right">6 December, 2020</a>
-                                    <br><br/>
-                                    <br><br/>
-                                    <p></p>
-                                </li>
-                                <li>
-                                    <a>ยืนยันสิทธิ์การเข้าร่วมกิจกรรม</a>
-                                    <a class="float-right">7 December, 2020</a>
-                                    <br><br/>
-                                    <br><br/>
-                                    <p></p>
-                                </li>
-                                <li>
-                                    <a>วันกิจกรรม</a>
-                                    <a class="float-right">11 December, 2020</a>
-                                    <p>asdfghgfdsasdfghnhgfd</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+<div class="agenda-section">
+    <div class="agenda">
+        <div class="agenda-header">กำหนดการ</div>
+        <div class="agenda-item-container">
+            <div class="agenda-item">
+                <div class="agenda-time-text">08.30</div>
+                <div class="agenda-description-text">ลงทะเบียน</div>
+            </div>
+            <div class="agenda-item">
+                <div class="agenda-time-text">09.00</div>
+                <div class="agenda-description-text">แจ้งกำหนดการภาพรวมและแนะนำกิจกรรม</div>
+            </div>
+            <div class="agenda-item">
+                <div class="agenda-time-text">10.00</div>
+                <div class="agenda-description-text">หลักสูตรและการตัดสินใจเลือกสาขาวิชาทางด้านเทคโนโลยีในปัจจุบัน</div>
+            </div>
+            <div class="agenda-item">
+                <div class="agenda-time-text">11.00</div>
+                <div class="agenda-description-text">การใช้ชีวิตในมหาวิทยาลัย</div>
+            </div>
+            <div class="agenda-item">
+                <div class="agenda-time-text">13.00-17.00</div>
+                <div class="agenda-description-text">Workshop ทดลองใช้งานจริง ในหัวข้อดังต่อไปนี้</div>
+            </div>
+            <div class="agenda-item">
+                <div class="agenda-time-text">15.00 - 15.15</div>
+                <div class="agenda-description-text">พักเบรก</div>
+            </div>
+            <div class="agenda-item">
+                <div class="agenda-time-text">17.15</div>
+                <div class="agenda-description-text">ลงทะเบียนรับของที่ระลึก</div>
+            </div>
+            <div class="agenda-item">
+                <div class="agenda-time-text">17.30</div>
+                <div class="agenda-description-text">เสร็จกิจกรรม</div>
             </div>
         </div>
     </div>
-</div> <!-- end of container -->
+</div>
