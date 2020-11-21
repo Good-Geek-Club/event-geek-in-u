@@ -10,13 +10,16 @@ const routes: Routes = [
   //     {path: '', component: HomeComponent }
   //   ],
   // },
-  {path: '', component: HomeComponent },
+  {path: '', component: HomeComponent, pathMatch: 'full'},
   {path: 'speakers', component: SpeakersComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
-    initialNavigation: 'enabled'
+    initialNavigation: 'enabled',
+    scrollPositionRestoration: 'enabled',
+    anchorScrolling: 'enabled',
+    scrollOffset: [0, 64],
 })],
   exports: [RouterModule]
 })
