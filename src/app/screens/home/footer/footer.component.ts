@@ -7,6 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+  contacts = [
+    { name: 'พี่เน', tel: '083-545-8540' },
+    { name: 'พี่ปอ', tel: '083-545-8540' },
+  ];
+  socials = [
+    {
+      name: 'Facebook',
+      title: 'good.geek.community',
+      href: 'https://www.facebook.com/good.geek.community/',
+      iconClass: 'fab fa-facebook-square mr-2',
+    },
+    {
+      name: 'Instagram',
+      title: 'goodgeek.club',
+      href: 'https://www.instagram.com/goodgeek.club',
+      iconClass: 'fab fa-instagram mr-2',
+    }
+  ];
   constructor() { }
 
   ngOnInit(): void {

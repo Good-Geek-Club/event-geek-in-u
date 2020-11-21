@@ -13,6 +13,7 @@ import { DescriptionComponent } from './screens/home/description/description.com
 import { FooterComponent } from './screens/home/footer/footer.component';
 import { LocationComponent } from './screens/home/location/location.component';
 import { SponsorsComponent } from './screens/home/sponsors/sponsors.component';
+import {CommonModule} from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -26,9 +27,10 @@ import { SponsorsComponent } from './screens/home/sponsors/sponsors.component';
     DescriptionComponent,
     FooterComponent,
     LocationComponent,
-    SponsorsComponent
+    SponsorsComponent,
   ],
   imports: [
+    CommonModule,
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule
   ],

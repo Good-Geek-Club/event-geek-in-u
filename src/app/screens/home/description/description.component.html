@@ -31,20 +31,10 @@
             <div class="col-lg-6">
                 <div class="text-container">
                     <h2>วัตถุประสงค์</h2>
-                    <ul class="card-text-title list-unstyled li-space-lg">
-                        <li class="media">
-                            <i class="fas fa-check"></i>
-                            <span class="media-body">เพื่อให้ผู้เข้าอบรมมีแนวทางในการเลือกและตัดสินใจเข้าศึกษาต่อในสาขาด้านเทคโนโลยีที่คนเองสนใจ</span>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-check"></i>
-                            <span class="media-body">เพื่อให้ผู้เข้าอบรมมีแรงบันดาลใจและมุ่งมั่นในการเข้าศึกษาต่อในสาขาวิชาด้านเทคโนโลยี</span>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-check"></i>
-                            <span class="media-body">เพื่อให้ผู้เข้าอบรม ได้เรียนรู้ ทำความเข้าใจเทคโนโลยีที่ตนสนใจเบื้องต้น และได้ลงมือปฎิบัติจริงจาก Workshop</span>
-                        </li>
-                    </ul>
+                    <p *ngFor="let obj of objectives" class="card-subtitle">
+                        <i class="fas fa-check"></i>
+                        <span>{{obj}}</span>
+                    </p>
                 </div> <!-- end of text-container -->
             </div> <!-- end of col -->
         </div> <!-- end of row -->

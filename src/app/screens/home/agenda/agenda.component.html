@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h2>กำหนดการ</h2>
+                <h2 class="text-center">กำหนดการ</h2>
             </div> <!-- end of col -->
         </div> <!-- end of row -->
         <div class="row">
@@ -12,6 +12,11 @@
                     <div class="row">
                         <div class="col-md-6 offset-md-3">
                             <ul class="timeline">
+                                <li *ngFor="let element of agenda;">
+                                    <a>{{element.title}}</a>
+                                    <a class="float-right">{{element.time}}</a>
+                                    <p *ngIf="element.detail">{{element.detail}}</p>
+                                </li>
                                 <li>
                                     <a>รับสมัคร</a>
                                     <a class="float-right">20 November, 2020</a>
@@ -36,9 +41,7 @@
                                 <li>
                                     <a>วันกิจกรรม</a>
                                     <a class="float-right">11 December, 2020</a>
-                                    <br><br/>
-                                    <br><br/>
-                                    <p></p>
+                                    <p>asdfghgfdsasdfghnhgfd</p>
                                 </li>
                             </ul>
                         </div>

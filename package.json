@@ -24,6 +24,7 @@
     "@angular/platform-browser-dynamic": "~11.0.0",
     "@angular/platform-server": "~11.0.0",
     "@angular/router": "~11.0.0",
+    "@fortawesome/fontawesome-free": "^5.15.1",
     "@nguniversal/express-engine": "^11.0.0",
     "bootstrap": "^5.0.0-alpha3",
     "express": "^4.15.2",

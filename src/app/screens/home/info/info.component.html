@@ -8,45 +8,16 @@
             </div> <!-- end of col -->
         </div> <!-- end of row -->
         <div class="row">
-            <div class="col-lg-12">
+            <div *ngFor="let element of info" class="col-lg-4 col-md-12">
                 <!-- Card -->
                 <div class="card">
-                    <img class="card-image" src="assets/images/services-icon-1.svg" alt="alternative">
+                    <img class="card-image" [src]="element.imgUrl" alt="alternative">
                     <div class="card-body">
-                        <h4 class="card-title">ระดับการศึกษา</h4>
-                        <p class="card-text-title">นักเรียนชั้นมัธยมศึกษาปีที่6 หรือนักเรียนปวช.3 ที่มีสนใจเทคโนโลยีสารสนเทศและอยากจะเข้าศึกษาต่อในสายงานด้านเทคโนโลยีสารสนเทศ</p>
+                        <h4 class="card-title">{{element.title}}</h4>
+                        <p class="card-subtitle">{{element.description}}</p>
                     </div>
                 </div>
                 <!-- end of card -->
-                <!-- Card -->
-                <div class="card">
-                    <img class="card-image" src="assets/images/services-icon-3.svg" alt="alternative">
-                    <div class="card-body">
-                        <h4 class="card-title">มีประกาศนียบัตรให้หรือไม่?</h4>
-                        <p class="card-text-title">มีประกาศนียบัตรให้กับผู้เข้าร่วมกิจกรรม</p>
-                    </div>
-                </div>
-                <!-- end of card -->
-                <div class="card">
-                    <img class="card-image" src="assets/images/services-icon-3.svg" alt="alternative">
-                    <div class="card-body">
-                        <h4 class="card-title">ค่าใช้จ่ายในการเข้าร่วมกิจกรรม?</h4>
-                        <p class="card-text-title">มีค่าลงทะเบียน 690 บาท</p>
-                    </div>
-                </div>
-                <!-- end of card -->
-
-
-                <!-- Card -->
-                <div class="card">
-                    <img class="card-image" src="assets/images/services-icon-3.svg" alt="alternative">
-                    <div class="card-body">
-                        <h4 class="card-title">จำนวนที่รับ</h4>
-                        <p class="card-text-title">ออฟไลน์ จำนวน 50-70 คน</p>
-                    </div>
-                </div>
-                <!-- end of card -->
-
             </div> <!-- end of col -->
         </div> <!-- end of row -->
     </div> <!-- end of container -->
