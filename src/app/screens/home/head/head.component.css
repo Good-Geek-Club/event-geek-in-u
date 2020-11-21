@@ -1,3 +1,19 @@
+.btn{
+    background-color: salmon;
+    width: 280px;
+    color: #fff;
+    border: 1px solid coral;
+    border-radius: 25px;
+    transition: background-color 0.5s, color 0.5s, border 0.5s;
+}
+.btn:active,
+.btn:hover{
+    background-color: #f0465100;
+    color: salmon;
+    border: 1px solid #f04651;
+}
+
+
 /* Min-width width 768px */
 @media (min-width: 768px) {
 
@@ -18,7 +34,7 @@
 @media (min-width: 992px) {
     /* Header */
     .header {
-        background: url('~src/assets/images/header-background.jpg') center center no-repeat;
+        /*background: url('~src/assets/images/header-background.jpg') center center no-repeat;*/
         background-size: cover;
     }
 }

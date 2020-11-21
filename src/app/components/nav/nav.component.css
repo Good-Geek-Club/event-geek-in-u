@@ -11,18 +11,18 @@
 .n-link:hover{
     margin: 0;
     padding: 0 8px;
-    border-bottom: 4px solid #f04651;
+    border-bottom: 4px solid salmon;
     text-decoration: none;
 }
 .btn{
-    background-color: #f04651;
+    background-color: salmon;
     color: #fff;
-    border: 1px solid #f04651;
+    border: 1px solid coral;
     transition: background-color 0.5s, color 0.5s, border 0.5s;
 }
 .btn:active,
 .btn:hover{
     background-color: #f0465100;
-    color: #f04651;
+    color: salmon;
     border: 1px solid #f04651;
 }

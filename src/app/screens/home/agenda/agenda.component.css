@@ -28,3 +28,16 @@
     grid-template-columns: 3fr 9fr;
     border-bottom: 1px dashed #f04651;
 }
+
+.title {
+    color: salmon;
+    font-weight: bold;
+}
+
+.subtitle {
+    color: #626262;
+}
+
+a {
+    color: cornflowerblue;
+}

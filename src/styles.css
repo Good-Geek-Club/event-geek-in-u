@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 body, p {
     color: #626262;
     font: 400 0.875rem/1.375rem "Raleway", sans-serif;
@@ -11,4 +11,30 @@ body, p {
 
 .p-small {
     font: 400 0.75rem/1.25rem "Raleway", sans-serif;
+}
+
+a {
+    font-family: "Raleway", "Sarabun", sans-serif;
+    color: cornflowerblue;
+}
+
+.text-header {
+    font-family: "Raleway", 'Sarabun', sans-serif;
+    color: cornflowerblue;
+    font-weight: bold;
+}
+
+.text-title {
+    font-family: "Raleway", 'Sarabun', sans-serif;
+    color: salmon;
+    font-weight: bold;
+}
+
+.text-subtitle {
+    font-family: "Raleway", 'Sarabun', sans-serif;
+    color: #626262;
+}
+
+.bg-salmon {
+    background-color: salmon;
 }

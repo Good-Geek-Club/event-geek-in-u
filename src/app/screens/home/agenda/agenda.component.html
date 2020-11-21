@@ -1,39 +1,95 @@
-<div class="agenda-section">
-    <div class="agenda">
-        <div class="agenda-header">กำหนดการ</div>
-        <div class="agenda-item-container">
-            <div class="agenda-item">
-                <div class="agenda-time-text">08.30</div>
-                <div class="agenda-description-text">ลงทะเบียน</div>
-            </div>
-            <div class="agenda-item">
-                <div class="agenda-time-text">09.00</div>
-                <div class="agenda-description-text">แจ้งกำหนดการภาพรวมและแนะนำกิจกรรม</div>
-            </div>
-            <div class="agenda-item">
-                <div class="agenda-time-text">10.00</div>
-                <div class="agenda-description-text">หลักสูตรและการตัดสินใจเลือกสาขาวิชาทางด้านเทคโนโลยีในปัจจุบัน</div>
-            </div>
-            <div class="agenda-item">
-                <div class="agenda-time-text">11.00</div>
-                <div class="agenda-description-text">การใช้ชีวิตในมหาวิทยาลัย</div>
-            </div>
-            <div class="agenda-item">
-                <div class="agenda-time-text">13.00-17.00</div>
-                <div class="agenda-description-text">Workshop ทดลองใช้งานจริง ในหัวข้อดังต่อไปนี้</div>
-            </div>
-            <div class="agenda-item">
-                <div class="agenda-time-text">15.00 - 15.15</div>
-                <div class="agenda-description-text">พักเบรก</div>
-            </div>
-            <div class="agenda-item">
-                <div class="agenda-time-text">17.15</div>
-                <div class="agenda-description-text">ลงทะเบียนรับของที่ระลึก</div>
-            </div>
-            <div class="agenda-item">
-                <div class="agenda-time-text">17.30</div>
-                <div class="agenda-description-text">เสร็จกิจกรรม</div>
-            </div>
+<!--<div class="agenda-section">-->
+    <!--<div class="agenda">-->
+        <!--<div class="agenda-header">กำหนดการ</div>-->
+        <!--<div class="agenda-item-container">-->
+            <!--<div class="agenda-item">-->
+                <!--<div class="agenda-time-text">08.30</div>-->
+                <!--<div class="agenda-description-text">ลงทะเบียน</div>-->
+            <!--</div>-->
+            <!--<div class="agenda-item">-->
+                <!--<div class="agenda-time-text">09.00</div>-->
+                <!--<div class="agenda-description-text">แจ้งกำหนดการภาพรวมและแนะนำกิจกรรม</div>-->
+            <!--</div>-->
+            <!--<div class="agenda-item">-->
+                <!--<div class="agenda-time-text">10.00</div>-->
+                <!--<div class="agenda-description-text">หลักสูตรและการตัดสินใจเลือกสาขาวิชาทางด้านเทคโนโลยีในปัจจุบัน</div>-->
+            <!--</div>-->
+            <!--<div class="agenda-item">-->
+                <!--<div class="agenda-time-text">11.00</div>-->
+                <!--<div class="agenda-description-text">การใช้ชีวิตในมหาวิทยาลัย</div>-->
+            <!--</div>-->
+            <!--<div class="agenda-item">-->
+                <!--<div class="agenda-time-text">13.00-17.00</div>-->
+                <!--<div class="agenda-description-text">Workshop ทดลองใช้งานจริง ในหัวข้อดังต่อไปนี้</div>-->
+            <!--</div>-->
+            <!--<div class="agenda-item">-->
+                <!--<div class="agenda-time-text">15.00 - 15.15</div>-->
+                <!--<div class="agenda-description-text">พักเบรก</div>-->
+            <!--</div>-->
+            <!--<div class="agenda-item">-->
+                <!--<div class="agenda-time-text">17.15</div>-->
+                <!--<div class="agenda-description-text">ลงทะเบียนรับของที่ระลึก</div>-->
+            <!--</div>-->
+            <!--<div class="agenda-item">-->
+                <!--<div class="agenda-time-text">17.30</div>-->
+                <!--<div class="agenda-description-text">เสร็จกิจกรรม</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<div class="container mt-4 mb-5">
+    <div class="row">
+        <h2 class="text-center text-dark mb-2">กำหนดการ</h2>
+        <h4><strong>ภาคเช้า</strong>&nbsp;&nbsp;<span class="badge bg-salmon">Session</span></h4>
+        <div>
+            <table class="table table-bordered table-hover">
+                <!--<thead>-->
+                <!--<tr class="text-center">-->
+                    <!--<th scope="col">เวลา</th>-->
+                    <!--<th scope="col">เนื้อหา</th>-->
+                <!--</tr>-->
+                <!--</thead>-->
+                <tbody>
+                <tr *ngFor="let agenda of agendaMorning; let i = index;">
+                    <th scope="row">{{agenda.time}}</th>
+                    <td>
+                        <div class="pl-2">
+                            <p class="text-title m-1">{{agenda.title}}</p>
+                            <p *ngIf="agenda.speaker" class="text-subtitle m-0">โดย {{agenda.speaker}}</p>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="mt-4">
+            <h4><strong>ภาคบ่าย</strong>&nbsp;&nbsp;<span class="badge bg-salmon">Workshop</span></h4>
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr class="text-center">
+                        <th scope="col">เวลา</th>
+                        <th scope="col">ห้อง X11.1</th>
+                        <th scope="col">ห้อง X11.3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let agenda of agendaNoon; let i = index;">
+                        <th scope="row">{{agenda.time}}</th>
+                        <td [attr.colspan]="getSpan(agenda.contents)" *ngFor="let content of agenda.contents">
+                            <div class="pl-2">
+                                <p class="text-title m-1" [class.text-center]="getSpan(agenda.contents) === 2">{{content.title}}&nbsp;&nbsp;<span *ngIf="content.no" class="badge bg-light text-secondary">{{content.no}}</span></p>
+                                <p *ngIf="content.speaker" class="text-subtitle m-0">โดย {{content.speaker}}</p>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <a [routerLink]="'/speakers'">เพิ่มเติมเกี่ยวกับวิทยากร และ เนื้อหาบรรยาย&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
         </div>
     </div>
 </div>
