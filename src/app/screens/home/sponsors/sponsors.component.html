@@ -4,14 +4,23 @@
     <div class="row text-center bg-custom-light pt-4 pb-4">
         <div class="col-12">
             <h1 class="mb-2 text-dark"><strong>Sponsors by</strong></h1>
-            <img class="sponsor-img m-2" src="assets/images/sponsors/goodgeek-logo-landscape.webp" alt="goodgeekclub-logo">
-            <img class="sponsor-img m-2" src="assets/images/sponsors/ict-spu-logo.webp" alt="ict-spu-logo">
+            <picture>
+                <source srcset="assets/images/sponsors/goodgeek-logo-landscape.webp" type="image/webp">
+                <img class="sponsor-img m-2" src="assets/images/sponsors/goodgeek-logo-landscape.png" alt="goodgeekclub-logo">
+            </picture>
+            <picture>
+                <source srcset="assets/images/sponsors/ict-spu-logo.webp" type="image/webp">
+                <img class="sponsor-img m-2" src="assets/images/sponsors/ict-spu-logo.png" alt="ict-spu-logo">
+            </picture>
         </div>
         <div class="mt-5 mb-3"></div>
         <div class="col-12">
             <h4 class="mb-2 text-dark" style="font-weight: 400">Supported by</h4>
             <span *ngFor="let sup of supports">
-                <img class="support-img m-3" loading="lazy" [src]="sup.imgUrl" [alt]="sup.imgAlt">
+                <picture>
+                    <source [srcset]="sup.imgUrl" type="image/webp">
+                    <img class="support-img m-3" loading="lazy" [src]="sup.imgUrl.replace('webp', 'png')" [alt]="sup.imgAlt">
+                </picture>
             </span>
         </div>
     </div>

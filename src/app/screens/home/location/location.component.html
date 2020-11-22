@@ -7,21 +7,19 @@
             </div> <!-- end of col -->
         </div> <!-- end of row -->
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col">
                 <div class="map-responsive">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26073.949957770215!2d100.50375911446497!3d13.723544275038584!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe2511ae461733d57!2sKX%20-%20Knowledge%20Exchange%20for%20Innovation%20(KMUTT)!5e0!3m2!1sth!2sth!4v1605627365723!5m2!1sth!2sth" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
-            </div> <!-- end of col -->
-            <div class="col-lg-6">
-                <div class="col-lg-10">
-                    <div class="image-container">
-                        <img class="img-fluid" src="assets/images/KM.png" alt="alternative">
-                        <br /> <br />
-                        <img class="img-fluid" src="assets/images/KM2.png" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of container -->
+            </div>
+        </div>
+        <div class="row">
+            <div *ngFor="let pic of pictures" class="col-lg-6 col-md-12 mb-3">
+                <picture>
+                    <source [srcset]="pic.imgUrl.replace('.png', '.webp')" type="image/webp">
+                    <img class="img-fluid" [src]="pic.imgUrl" alt="KX-Knowkledge" loading="lazy">
+                </picture>
+            </div>
+        </div>
+    </div>
 </div>
-<!-- Contact -->

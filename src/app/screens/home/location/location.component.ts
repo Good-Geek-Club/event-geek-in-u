@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LocationComponent implements OnInit {
 
+  pictures = [
+    {imgUrl: 'assets/images/KM.png'},
+    {imgUrl: 'assets/images/KM2.png'},
+  ];
   constructor() { }
 
   ngOnInit(): void {

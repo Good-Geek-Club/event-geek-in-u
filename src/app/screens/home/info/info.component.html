@@ -11,7 +11,10 @@
             <div *ngFor="let element of info" class="col-lg-4 col-md-12">
                 <!-- Card -->
                 <div class="card">
-                    <img class="card-image" [src]="element.imgUrl" alt="alternative">
+                    <picture>
+                        <source [srcset]="element.imgUrl.replace('.png', '.webp')" type="image/webp">
+                        <img class="card-image" [src]="element.imgUrl" alt="alternative">
+                    </picture>
                     <div class="card-body">
                         <h4 class="card-title">{{element.title}}</h4>
                         <p class="card-subtitle">{{element.description}}</p>
