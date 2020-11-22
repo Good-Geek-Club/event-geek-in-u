@@ -23,7 +23,7 @@
     object-fit: cover;
     border: 4px solid salmon;
     width: 75%;
-    margin: 40px 0 0 30px;
+    margin: 40px 0 10px 30px;
 }
 /* speaker about */
 .speaker-about{
@@ -32,15 +32,21 @@
 }
 .speaker-about h1{
     font-size: 22px;
-    padding: 10px 0 20px 0;
+    padding: 10px 0 5px 0;
 }
 .speaker-about h2{
     font-size: 60%;
     color: #949494;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 .speaker-about p{
     text-align: justify;
+    line-height: 22px;
+    padding-bottom: 2px;
+    font-weight: 500;
+}
+.synopsis{
+    text-indent: 39px;
 }
 
 @media only screen and (max-width: 841px) {
