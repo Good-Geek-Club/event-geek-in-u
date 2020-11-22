@@ -11,7 +11,7 @@ export class AgendaComponent implements OnInit {
     { time: '8:30 - 9:00', title: 'ลงทะเบียน'},
     { time: '9:00 - 9:15', title: 'ชี้แจงกิจกรรมภายในงาน' },
     { time: '9:15 - 10:00', title: 'การเรียนในมหาวิทยาลัยมีความสำคัญอย่างไร', speaker: 'พี่เน, Good Geek Club'},
-    {time: '10:00 - 11:00', title: 'หลักสูตรและการติดสินใจเลือกสาขาวิชาด้านทคโนโลยีในปัจจุบัน', speaker: 'อ.อิสระ, มหาวิทยาลัยศรีปทุม'},
+    {time: '10:00 - 11:00', title: 'หลักสูตรและการตัดสินใจเลือกสาขาวิชาด้านเทคโนโลยีในปัจจุบัน', speaker: 'อ.อิสระ, มหาวิทยาลัยศรีปทุม'},
     {time: '11:00 - 12:00', title: 'การใช้ชีวิตในมหาวิทยาลัย', speaker: 'พี่โค้ชเบ๊นซ์'},
   ];
   agendaNoon = [
@@ -42,14 +42,14 @@ export class AgendaComponent implements OnInit {
       time: '15:15 - 16:15',
       contents: [
         {no: '3', title: 'BigData in daily life and future', speaker: 'พี่บอยด์, BigData RPG'},
-        {no: '4', title: 'Cloud Computing Workshop 101', speaker: 'พี่ทอย DataRockie'},
+        {no: '4', title: 'Data Analytic on Cloud (in your browser)', speaker: 'พี่ทอย DataRockie'},
       ],
       duration: '60 min',
     },
     {
       time: '16:15 - 17:15',
       contents: [
-        {no: '4', title: 'Cloud Computing Workshop 101', speaker: 'พี่ทอย DataRockie'},
+        {no: '4', title: 'Data Analytic on Cloud (in your browser)', speaker: 'พี่ทอย DataRockie'},
         {no: '3', title: 'BigData in daily life and future', speaker: 'พี่บอยด์, BigData RPG'},
       ],
       duration: '60 min',

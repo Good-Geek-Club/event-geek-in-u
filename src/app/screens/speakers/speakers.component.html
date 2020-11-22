@@ -2,7 +2,11 @@
 <section class="speaker-contents">
     <article *ngFor="let speaker of speakers; let i = index;">
         <div class="speaker-profile">
-            <img [src]="speaker.imgUrl" [alt]="speaker.name" loading="lazy">
+            <picture>
+                <source [srcset]="speaker.imgUrl.replace('.jpg', '.webp')" type="image/webp">
+                <img [src]="speaker.imgUrl" [alt]="speaker.name" loading="lazy">
+            </picture>
+
         </div>
         <div class="speaker-about">
             <h1>{{speaker.name}}</h1>

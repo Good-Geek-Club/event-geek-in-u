@@ -9,7 +9,7 @@ export class SpeakersComponent implements OnInit {
 
   speakers = [
     {
-      imgUrl: 'assets/images/speakers/nay-araiva.jpeg',
+      imgUrl: 'assets/images/speakers/nay-araiva.jpg',
       name: 'พี่เน, Good Geek',
       position: 'Founder @GoodGeek Club และ Cloud Development Lead @D-Net Technology',
       exp: [
@@ -23,7 +23,7 @@ export class SpeakersComponent implements OnInit {
         '- การเลือกมหาวิทยาลัยมีผลต่ออนาคตการทำงานหรือไม่อย่างไร ?'
     },
     {
-      imgUrl: 'assets/images/speakers/isara-spu.jpeg',
+      imgUrl: 'assets/images/speakers/isara-spu.jpg',
       name: 'อาจารย์อิศรา นาคะวิสุทธิ์',
       position: 'หัวหน้าสาขาวิชาเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยศรีปทุม',
       exp: [
@@ -43,8 +43,8 @@ export class SpeakersComponent implements OnInit {
       synopsis: 'เราควรจะอะไรบ้างในระหว่างเรียนมหาวิทยาลัย ?'
     },
     {
-      imgUrl: 'assets/images/speakers/ohm-kubeops.jpeg',
-      name: 'พี่โอม, KubOps',
+      imgUrl: 'assets/images/speakers/ohm-kubeops.jpg',
+      name: 'พี่โอม, KubeOps',
       position: 'Co - Founder @KubeOps Skills',
       exp: [
         'CNCF Certified Kubernetes Application Developer (CKAD)',
@@ -54,10 +54,10 @@ export class SpeakersComponent implements OnInit {
       synopsis: ''
     },
     {
-      imgUrl: 'assets/images/speakers/toy-datarockie.jpeg',
+      imgUrl: 'assets/images/speakers/toy-datarockie.jpg',
       name: 'พี่ทอย DataRockie',
       position: 'Admin Page Datarockie',
-      topic: 'Cloud Computing Workshop 101 ',
+      topic: 'Data Analytic on Cloud (in your browser)',
       synopsis: ''
     },
     {
