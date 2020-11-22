@@ -5,7 +5,7 @@
     margin: 0 8px;
     padding: 0;
     border-bottom: 4px solid transparent;
-    transition: border-bottom 0.4s, margin 0.4s, padding 0.4s;
+    transition: border-bottom 0.3s, margin 0.3s, padding 0.3s;
 }
 .n-link:active,
 .n-link:hover{
