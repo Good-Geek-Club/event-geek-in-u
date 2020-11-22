@@ -29,8 +29,6 @@
             ],
             "styles": [
               "src/styles.css",
-              "src/assets/css/swiper.css",
-              "src/assets/css/template.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.css",
               "node_modules/bootstrap/dist/css/bootstrap.css"
             ],
