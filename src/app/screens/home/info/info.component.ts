@@ -11,7 +11,7 @@ export class InfoComponent implements OnInit {
     {
       imgUrl: 'assets/images/geekinu-info-level.png',
       title: 'ระดับการศึกษา',
-      description: 'นักเรียนชั้นมัธยมศึกษาปีที่6 หรือนักเรียนปวช.3 ที่มีสนใจเทคโนโลยีสารสนเทศและอยากจะเข้าศึกษาต่อในสายงานด้านเทคโนโลยีสารสนเทศ',
+      description: 'นักเรียนชั้นมัธยมศึกษาปีที่6 หรือนักเรียนปวช.3 ที่มีความสนใจเทคโนโลยีสารสนเทศและอยากจะเข้าศึกษาต่อในสายงานด้านเทคโนโลยีสารสนเทศ',
     },
     {
       imgUrl: 'assets/images/geekinu-info-cert.png',

@@ -8,11 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class SponsorsComponent implements OnInit {
 
   supports = [
-    {imgUrl: 'assets/images/sponsors/kubeops-skill.png', imgAlt: 'kubeops-skill-logo'},
-    {imgUrl: 'assets/images/sponsors/angular-thailand-logo.png', imgAlt: 'angular-thailand-logo'},
-    {imgUrl: 'assets/images/sponsors/datarockie-logo.png', imgAlt: 'datarockie-logo'},
-    {imgUrl: 'assets/images/sponsors/bigdata-rpg-logo.png', imgAlt: 'bigdata-rpg-logo'},
-    {imgUrl: 'assets/images/sponsors/peacegen-logo.png', imgAlt: 'peacegen-logo'},
+    {imgUrl: 'assets/images/sponsors/kubeops-skill.webp', imgAlt: 'kubeops-skill-logo'},
+    {imgUrl: 'assets/images/sponsors/angular-thailand-logo.webp', imgAlt: 'angular-thailand-logo'},
+    {imgUrl: 'assets/images/sponsors/datarockie-logo.webp', imgAlt: 'datarockie-logo'},
+    {imgUrl: 'assets/images/sponsors/bigdata-rpg-logo.webp', imgAlt: 'bigdata-rpg-logo'},
+    {imgUrl: 'assets/images/sponsors/peacegen-logo.webp', imgAlt: 'peacegen-logo'},
   ]
   constructor() { }
 
