@@ -57,7 +57,7 @@ export class SpeakersComponent implements OnInit {
       imgUrl: 'assets/images/speakers/toy-datarockie.jpg',
       name: 'พี่ทอย DataRockie',
       position: 'Admin Page Datarockie',
-      topic: 'Data Analytic on Cloud (in your browser)',
+      topic: 'Data Analytics on Cloud (in your browser)',
       synopsis: ''
     },
     {
