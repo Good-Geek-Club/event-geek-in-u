@@ -5,7 +5,7 @@
   <!-- SEO Meta Tags -->
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta name="description" content="กิจกรรมแนะแนวการเข้ามหาวิทยาลัยสำหรับนักเรียนชั้นมัธยมศึกษาปีที่ 6 และ ปวช. ปี 3">
   <meta name="keywords" content="geekinu, camp, event, activity, ค่าย, กิจกรรม, นักเรียน">
   <meta name=”robots” content="index, follow">
@@ -14,22 +14,25 @@
   <meta name="geo.position" content="13.7204117;100.4961692">
   <meta property="og:longitude" content="100.498358">
   <meta property="og:latitude" content="13.720412">
+  <meta property="og:location" content="The Knowledge Exchange: KX, Bangkok, Thailand">
   <meta name="geo.placename" content="kx knowledge exchange">
   <meta name="geo.region" content="Thailand Bangkok 10600">
 
   <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
   <meta property="og:site_name" content="Geek in U" /> <!-- website name -->
-  <meta property="og:site" content="http://geekinu.com" /> <!-- website link -->
+  <meta property="og:site" content="https://geekinu.com" /> <!-- website link -->
   <meta property="og:title" content="Geek in U: Follow your favorite, Follow your dream"/> <!-- title shown in the actual shared post -->
   <meta property="og:description" content="กิจกรรมแนะแนวการเข้ามหาวิทยาลัยสำหรับนักเรียนชั้นมัธยมศึกษาปีที่ 6 และ ปวช. ปี 3" /> <!-- description shown in the actual shared post -->
-  <meta property="og:image" content="https://geekinu.com/assets/images/header-geekinu.png" /> <!-- image link, make sure it's jpg -->
-  <meta property="og:url" content="http://geekinu.com" /> <!-- where do you want your post to link to -->
-  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://geekinu.com/assets/images/geekinu-cover-promote.png" /> <!-- image link, make sure it's jpg -->
+  <meta property="og:url" content="https://geekinu.com" /> <!-- where do you want your post to link to -->
+  <meta property="og:type" content="article" />
   <meta property="og:locale" content="th_TH" />
+
+  <meta property="fb:app_id" content="160480232458193" />
 
   <!-- Twitter Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
   <meta name="twitter:title" content="Geek in U">
-  <meta name="twitter:image" content="https://geekinu.com/assets/images/header-geekinu.png">
+  <meta name="twitter:image" content="https://geekinu.com/assets/images/geekinu-cover-promote.png">
   <!-- Website Title -->
   <title>Geek in U</title>
 
@@ -38,16 +41,37 @@
 
   <script>
     // Log the value of FCP to the console | https://web.dev/fcp/#measure-fcp-in-javascript
-    // const observer = new PerformanceObserver((list) => {
-    //   for (const entry of list.getEntriesByName('first-contentful-paint')) {
-    //     console.log('FCP: ', entry.startTime);
-    //     observer.disconnect();
-    //   }
-    // })
-    // observer.observe({type: 'paint', buffered: true});
+    const observer = new PerformanceObserver((list) => {
+      for (const entry of list.getEntriesByName('first-contentful-paint')) {
+        console.log('FCP: ', entry.startTime);
+        observer.disconnect();
+      }
+    });
+    observer.observe({type: 'paint', buffered: true});
   </script>
 </head>
 <body>
   <app-root></app-root>
+
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '160480232458193',
+        cookie     : true,
+        xfbml      : true,
+        version    : 'v9.0'
+      });
+
+      FB.AppEvents.logPageView();
+    };
+
+    (function(d, s, id){
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 </body>
 </html>
