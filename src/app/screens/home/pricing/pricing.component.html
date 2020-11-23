@@ -18,11 +18,12 @@
                 </div>
                 <div *ngIf="price.href">
                     <a [href]="price.href">
-                        <button type="button" [disabled]="price.disabled" class="btn btn-lg mb-3 mr-3 ml-3">{{price.btnTitle}}</button>
+                        <button style="min-width: 180px" type="button" [disabled]="price.disabled" class="btn btn-lg mb-3 mr-3 ml-3">{{price.btnTitle}}</button>
                     </a>
                 </div>
                 <div *ngIf="!price.href">
                     <button
+                        style="min-width: 180px"
                         data-toggle="modal"
                         data-target="#quota-info"
                         type="button"
