@@ -1,0 +1,48 @@
+.card {
+    min-width: 180px;
+    max-width: 480px;
+    min-height: 280px;
+}
+.card-header {
+    background: salmon;
+    color: #fff;
+    font-weight: bold;
+}
+.pricing-card-title {
+    color: #393939;
+}
+.list-unstyled {
+    color: #626262;
+    font-size: medium;
+}
+.btn {
+    color: white;
+    background-color: salmon;
+    border: 1px solid salmon;
+    padding: 7px;
+    transition: color 0.4s, background-color 0.4s, border 0.4s;
+}
+.btn:active,
+.btn:hover {
+    border: 1px solid salmon;
+    background-color: #fa807200;
+    color: salmon;
+}
+
+.btn-close-bottom {
+    background-color: grey;
+    color: white;
+}
+.btn-register {
+    color: white;
+    background-color: salmon;
+}
+
+.test-example{
+    width: 100%;
+}
+
+.test-example-image{
+    object-fit: cover;
+    width: 100%;
+}
