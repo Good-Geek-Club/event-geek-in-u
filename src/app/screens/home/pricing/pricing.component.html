@@ -1,0 +1,84 @@
+<div class="container">
+    <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h2>บัตรร่วมงาน</h2>
+        <p>ค่าใช้จ่ายในการเข้าร่วมกิจกรรม GEEK in U มี 3 รูปแบบ ให้เลือกตามรายการด้านล่าง</p>
+    </div>
+
+    <div class="row mb-3 text-center">
+        <div *ngFor="let price of prices" class="col-lg-4 col-sm-12">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 fw-normal" >{{price.title}}</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title" [innerHTML]="price.price"></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li *ngFor="let value of price.detail">{{value}}</li>
+                    </ul>
+                </div>
+                <div *ngIf="price.href">
+                    <a [href]="price.href">
+                        <button type="button" [disabled]="price.disabled" class="btn btn-lg mb-3 mr-3 ml-3">{{price.btnTitle}}</button>
+                    </a>
+                </div>
+                <div *ngIf="!price.href">
+                    <button
+                        data-toggle="modal"
+                        data-target="#quota-info"
+                        type="button"
+                        [disabled]="price.disabled"
+                        class="btn btn-lg mb-3 mr-3 ml-3">{{price.btnTitle}}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="quota-info" tabindex="-1" aria-labelledby="quotaModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="quotaModalLabel">ขั้นตอนการสมัคร Quota</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h4>ภารกิจพิเศษ</h4>
+                <div>
+                    <p>1. จงอัพโหลดภาพความสำเร็จในสายงานด้านไอทีที่วาดฝันไว้</p>
+                </div>
+                <div>
+                    <p>2. กด Like page & Share ข่าวสารกิจกรรมนี้ไปยังเพื่อนของคุณโดยตั้งเป็นโพสต์สาธารณะ (อัพโหลดภาพการแชร์) <span><a href="https://facebook.com/good.geek.community/posts/200911398208335">GEEK in U Post</a></span></p>
+                    <p><u>ตัวอย่างการแชร์</u></p>
+                    <a target="_blank" href="https://geekinu.com/assets/images/quota/fb-sharing-example.png">
+                        <picture>
+                            <img src="assets/images/quota/fb-sharing-example.png" alt="fb-sharing-example">
+                        </picture>
+                    </a>
+                </div>
+                <div>
+                    <p>3. แก้ปัญหาโจทย์ <span><a href="https://app.codesignal.com/challenge/p4qArskGsNtf6ecdP">missingNumber</a></span> จากเวปไซต์ <span><a href="https://codesignal.com/challenge/p4qArskGsNtf6ecdP">Code Signal</a></span><br>
+                        สามารถแก้โจทย์ข้อนี้ผ่านเวปไซต์ Codesignal แล้ว แคปภาพแชร์ผลลัพธ์<br>
+                        <span class="text-danger">**</span>หากไม่สามารถเขียนโปรแกรมได้ ให้อธิบายวิธีการหาเลขจำนวนนั้น ในรูปแบบ Flow Diagram
+                    </p>
+                    <p><u>ตัวอย่างโจทย์</u></p>
+                    <a target="_blank" href="https://geekinu.com/assets/images/quota/codesignal-example.png">
+                        <picture>
+                            <img src="assets/images/quota/codesignal-example.png" alt="codesignal-example">
+                        </picture>
+                    </a>
+                </div>
+                <div>
+                    <p>4. กด Apply ใบสมัคร และกรอกข้อมูลให้ครบถ้วน ที่เวปไซต์ <span><a target="_blank" href="https://www.eventpop.me/e/10337/geekinu-2020">Eventpop</a></span></p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-close-bottom" data-dismiss="modal">Close</button>
+                <a target="_blank" href="https://www.eventpop.me/e/10337/geekinu-2020">
+                    <button type="button" class="btn btn-register">REGISTER</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

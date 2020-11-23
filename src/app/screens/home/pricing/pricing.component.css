@@ -1,0 +1,31 @@
+.card {
+    min-width: 180px;
+    max-width: 480px;
+    min-height: 280px;
+}
+
+.card-header {
+    background-color: white;
+    color: #393939;
+    font-weight: bold;
+}
+.pricing-card-title {
+    color: salmon;
+}
+.list-unstyled {
+    color: #626262;
+    font-size: medium;
+}
+.btn {
+    color: white;
+    background-color: cornflowerblue;
+}
+
+.btn-close-bottom {
+    background-color: grey;
+    color: white;
+}
+.btn-register {
+    color: white;
+    background-color: salmon;
+}
