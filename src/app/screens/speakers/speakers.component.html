@@ -1,29 +1,5 @@
 <h1 class="text-center">Speakers</h1>
 <section class="speaker-contents">
-    <article *ngFor="let speaker of speakers; let i = index;">
-        <div class="speaker-profile">
-            <picture>
-                <source [srcset]="speaker.imgUrl.replace('.jpg', '.webp')" type="image/webp">
-                <img [src]="speaker.imgUrl" [alt]="speaker.name" loading="lazy">
-            </picture>
-
-        </div>
-        <div class="speaker-about">
-            <h1>{{speaker.name}}</h1>
-            <h2>ตำแหน่ง</h2>
-            <p>{{speaker.position}}</p>
-            <h2>ประสบการณ์อื่นๆ - Experience</h2>
-            <div class="ml-2" *ngIf="speaker.exp && speaker.exp.length > 0">
-                <p *ngFor="let e of speaker.exp"><i class="fas fa-circle fa-xs mr-1"></i>{{e}}</p>
-            </div>
-            <h2>หัวข้อ - TOPICS</h2>
-            <p>{{speaker.topic}}</p>
-            <h2>บทย่อ - SYNOPSIS</h2>
-            <p class="synopsis">{{speaker.synopsis}}</p>
-        </div>
-    </article>
-
-    <!--
     <div *ngFor="let speaker of speakers; let i = index;" class="card mx-auto" style="width: 75%;">
         <div class="row">
             <div class="speaker-profile col-4">
@@ -49,6 +25,5 @@
             </div>
         </div>
     </div>
--->
 </section>
-<!--<app-footer id="contact"></app-footer>-->
+<app-footer id="contact"></app-footer>
