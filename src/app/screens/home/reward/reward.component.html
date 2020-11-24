@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h2>ของที่ระลึก</h2>
+        <p>ผู้ร่วมเข้าร่วมงานทุกท่านจะได้รับเสื้อ T-Shirt สวยๆจากกิจกรรม Geek in U และของที่ระลึกอื่นๆในงานอีกมากมาย</p>
+        <div class="row mt-3">
+            <div *ngFor="let reward of rewards" class="col-lg-6 col-sm-12 p-3">
+                <picture>
+                    <source [srcset]="reward.smallImgUrl.replace('.png', '.webp')" type="image/webp">
+                    <img class="img-custom" [src]="reward.smallImgUrl" alt="reward-shirt-back">
+                </picture>
+                <div class="mt-1"><a target="_blank" [href]="reward.imgUrl"><small>กดเพื่อดูภาพเต็ม <i class="fas fa-external-link-alt"></i></small></a></div>
+            </div>
+        </div>
+    </div>
+</div>

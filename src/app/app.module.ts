@@ -15,6 +15,7 @@ import { LocationComponent } from './screens/home/location/location.component';
 import { SponsorsComponent } from './screens/home/sponsors/sponsors.component';
 import {CommonModule} from '@angular/common';
 import { PricingComponent } from './screens/home/pricing/pricing.component';
+import { RewardComponent } from './screens/home/reward/reward.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { PricingComponent } from './screens/home/pricing/pricing.component';
     LocationComponent,
     SponsorsComponent,
     PricingComponent,
+    RewardComponent,
   ],
   imports: [
     CommonModule,
