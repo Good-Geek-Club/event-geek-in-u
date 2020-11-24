@@ -33,7 +33,7 @@ export class PricingComponent implements OnInit {
     },
     {
       title: 'General',
-      price: '590&#x0E3F;',
+      price: '690&#x0E3F;',
       detail: [
         'เข้าร่วมกิจกรรมแบบไร้เงื่อนไข',
       ],
