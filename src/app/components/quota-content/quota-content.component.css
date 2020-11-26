@@ -1,0 +1,16 @@
+.test-example{
+    /*width: 100%;*/
+    /*width: 100%;*/
+    width: 480px;
+}
+
+.test-example-image{
+    object-fit: cover;
+    width: 100%;
+    max-width: 540px;
+}
+.codesignal-example-image {
+    object-fit: cover;
+    width: 100%;
+    max-width: 640px;
+}
