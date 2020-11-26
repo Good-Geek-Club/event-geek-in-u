@@ -1,17 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {AppComponent} from './app.component';
 import {HomeComponent} from './screens/home/home.component';
 import {SpeakersComponent} from './screens/speakers/speakers.component';
+import {QuotaComponent} from './screens/quota/quota.component';
 
 const routes: Routes = [
-  // {
-  //   path: '', component: AppComponent, children: [
-  //     {path: '', component: HomeComponent }
-  //   ],
-  // },
   {path: '', component: HomeComponent, pathMatch: 'full'},
   {path: 'speakers', component: SpeakersComponent },
+  {path: 'quota', component: QuotaComponent },
 ];
 
 @NgModule({
