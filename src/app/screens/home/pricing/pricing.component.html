@@ -5,7 +5,7 @@
     </div>
 
     <div class="row mb-3 text-center">
-        <div *ngFor="let price of prices" class="col-lg-4 col-sm-12">
+        <div *ngFor="let price of prices" class="col-lg-3 col-md-6 col-sm-12">
             <div class="card mb-4 shadow-sm mx-auto">
                 <div class="card-header">
                     <h4 class="my-0 fw-normal" >{{price.title}}</h4>
@@ -25,7 +25,7 @@
                     <button
                         style="min-width: 180px"
                         data-toggle="modal"
-                        data-target="#quota-info"
+                        [attr.data-target]="price.target"
                         type="button"
                         [disabled]="price.disabled"
                         class="btn btn-lg mb-3 mr-3 ml-3">{{price.btnTitle}}
@@ -49,6 +49,42 @@
                 <button type="button" class="btn btn-close-bottom" data-dismiss="modal">Close</button>
                 <a target="_blank" href="https://www.eventpop.me/organizers/4748/events/10337-geekinu-2020/application_forms/707/applicants">
                     <button type="button" class="btn btn-register">REGISTER</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Sharer Modal -->
+<div class="modal fade" id="sharer-info" tabindex="-1" aria-labelledby="sharerModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="sharerModalLabel">ขั้นตอนการทำภารกิจ Sharer</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-3">
+                <h4>ภารกิจกิจ Sharer</h4>
+                <div>
+                    <p>1. กด Like page & Share ข่าวสารกิจกรรมนี้ไปยังเพื่อนของคุณโดยตั้งเป็นโพสต์สาธารณะ พร้อมทั้ง คอมเมนท์ชวนเพื่อนของคุณใต้โพสต์นี้อย่างน้อย 3 คน (อัพโหลดภาพการแชร์)
+                        <br>
+                        <strong>ลิ้งที่ใช้แชร์:</strong>&nbsp;
+                        <span>
+                            <a href="https://facebook.com/good.geek.community/posts/200911398208335" target="_blank">Geek in U Post<i class="fa fa-external-link" aria-hidden="true"></i></a>
+                        </span>
+                    </p>
+                    <div class="text-center">
+                        <a href="https://geekinu.com/assets/images/quota/geekinu-share-example.png"><img src="assets/images/quota/geekinu-share-example.png" alt="geekinu-share-example" width="420px"></a>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <p>2. อธิบายความความใฝ่ฝันหรือความสำเร็จในสายงานไอที ที่วาดฝันไว้เป็นอย่างไร</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-close-bottom" data-dismiss="modal">Close</button>
+                <a target="_blank" href="https://www.eventpop.me/events/10337-geekinu-2020/application_forms/711/applicants/new">
+                    <button type="button" class="btn btn-register">APPLY</button>
                 </a>
             </div>
         </div>

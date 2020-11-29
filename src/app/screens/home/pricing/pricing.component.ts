@@ -16,7 +16,7 @@ export class PricingComponent implements OnInit {
       ],
       btnTitle: 'SOLD OUT',
       disabled: true,
-      isQuota: false,
+      target: null,
       href: null
     },
     {
@@ -24,12 +24,24 @@ export class PricingComponent implements OnInit {
       price: '190&#x0E3F;',
       detail: [
         'ทำภารกิจพิเศษ',
-        'แล้วผ่านการคัดเลือก!!'
+        'กับแบบทดสอบที่ท้าทาย',
       ],
       btnTitle: 'MORE',
       disabled: false,
-      isQuota: true,
-      href: null
+      target: '#quota-info',
+      href: null,
+    },
+    {
+      title: 'Sharer',
+      price: '390&#x0E3F;',
+      detail: [
+        'ทำภารกิจพิเศษ',
+        'ประชาสัมพันธ์ไปยังเพื่อนๆ'
+      ],
+      btnTitle: 'MORE',
+      disabled: false,
+      target: '#sharer-info',
+      href: null,
     },
     {
       title: 'General',
@@ -39,7 +51,7 @@ export class PricingComponent implements OnInit {
       ],
       btnTitle: 'GET TICKET',
       disabled: false,
-      isQuota: true,
+      target: null,
       href: 'https://www.eventpop.me/e/10337/geekinu-2020/'
     }
   ];
