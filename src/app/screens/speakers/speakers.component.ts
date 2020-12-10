@@ -22,16 +22,16 @@ export class SpeakersComponent implements OnInit {
         '- ในยุคปัจจุบัน การเรียนมหาวิทยาลัยยังจำเป็นอยู่หรือไม่ อย่างไร ?' +
         '- การเลือกมหาวิทยาลัยมีผลต่ออนาคตการทำงานหรือไม่อย่างไร ?'
     },
-    {
-      imgUrl: 'assets/images/speakers/isara-spu.jpg',
-      name: 'อาจารย์อิศรา นาคะวิสุทธิ์',
-      position: 'หัวหน้าสาขาวิชาเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยศรีปทุม',
-      exp: [
-        'ผู้จัดการความปลอดภัยและระบบงานเทคโนโลยี @SCB',
-      ],
-      topic: 'หลักสูตรและการตัดสินใจเลือกสาขาวิชาทางด้านเทคโนโลยีในปัจจุบัน',
-      synopsis: ''
-    },
+    // {
+    //   imgUrl: 'assets/images/speakers/isara-spu.jpg',
+    //   name: 'อาจารย์อิศรา นาคะวิสุทธิ์',
+    //   position: 'หัวหน้าสาขาวิชาเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยศรีปทุม',
+    //   exp: [
+    //     'ผู้จัดการความปลอดภัยและระบบงานเทคโนโลยี @SCB',
+    //   ],
+    //   topic: 'หลักสูตรและการตัดสินใจเลือกสาขาวิชาทางด้านเทคโนโลยีในปัจจุบัน',
+    //   synopsis: ''
+    // },
     {
       imgUrl: 'assets/images/speakers/benz-siit.jpg',
       name: 'พี่โค้ชเบ๊นซ์, ภัทรพงษ์ พลเสน',
@@ -80,6 +80,26 @@ export class SpeakersComponent implements OnInit {
         'Master\'s degreeField Of StudyMaster of Engineering Program in Big Data Engineering @Dhurakij Pundit University'
       ],
       topic: 'Workshop : เล่าเรื่อง BigData in daily life and future',
+      synopsis: ''
+    },
+    {
+      imgUrl: 'assets/images/speakers/aom-sharer.jpg',
+      name: 'พี่ออม,​ ภัฎสร์ชนน ศรีรักษา',
+      position: 'นิสิตปริญาตรี คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์',
+      exp: [
+        'จบการศึกษาระดับมัธยม โรงเรียนสวนกุหลาบวิทยาลัยรังสิต',
+      ],
+      topic: 'แชร์ประสบการณ์และหลักสุตรจากพี่ๆ ต่างมหาวิทยาลัย',
+      synopsis: ''
+    },
+    {
+      imgUrl: 'assets/images/speakers/beem-sharer.jpg',
+      name: 'พี่บีม, สวรักษ์ มีศรี',
+      position: 'Quality Assurance',
+      exp: [
+        'จบการศึกษา คณะเทคโนโลยีสารสนเทศและการสื่อสาร (ICT) มหาวิทยาลัยมหิดล',
+      ],
+      topic: 'แชร์ประสบการณ์และหลักสุตรจากพี่ๆ ต่างมหาวิทยาลัย',
       synopsis: ''
     },
   ];
